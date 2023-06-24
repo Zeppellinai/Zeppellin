@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    height: 900vh;
+  }
+
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: 0;
+    background-color: #181818e1;
+    
+  }
+  
+
+.nav-bar img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    height: 5vh;  
+    width: auto;
+    right: 2vw;
+    
+    border-radius: 50%;
+}
+
+.nav-bar #logo_text {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.8vh;
+    padding-left: 2vw;
+  }
+
+.pitch {
+  position: absolute;
+  margin-top: 100vh;
+  margin-left: 5vw;
+}
+
+.pitch #head {
+  float: left;
+  margin: 0;
+  font-family: 'Turret Road', cursive;
+  color:#cc68dc;
+  font-size: 5.4vw;
+  filter: contrast(15);
+}
+
+.pitch #more {
+
+  float: left;
+  width: 45vw;
+  
+  margin-top: 2vh;
+  font-family: 'Turret Road', cursive;
+  color:#cc68dc;
+  font-size: 2.6vw;
+  filter: contrast(15);
+  margin-bottom: 1.1vw;
+}
+
+.pitch #signup {
+  position: absolute;
+  float: left;
+  left: 0px;
+  bottom: -4ch;
+}
+
+
+.more_about_me {
+  position: absolute;
+  margin-top: calc(110vh + 5.4vw + 2.6vw + 33vw + 3.5vh);
+  margin-left: 5vw;
+}
+
+.more_about_me #head {
+  float: left;
+  margin: 0;
+  font-family: 'Turret Road', cursive;
+  color:#cc68dc;
+  font-size: 5.4vw;
+  width: 80vw;
+  filter: contrast(15);
+}
+
+.more_about_me #more {
+
+  float: left;
+  width: 46vw;
+  margin: 0;
+  margin-top: 2vh;
+  font-family: 'Turret Road', cursive;
+  color:#cc68dc;
+  font-size: 2.6vw;
+  filter: contrast(15);
+}
+
+.more_about_me #picture {
+  position: absolute;
+  height: 44vw;
+  right: 3vw;
+  margin-top: 1.525vh;
+}
+
+.more_about_me #social {
+  position: relative;
+  width: 8.5vw;
+  background-color: rgb(22, 192, 205);
+  /* margin-top: calc(32ch); */
+  bottom: -20vw;
+  float: left;
+  left: -48vw;
+  margin-left: 2.2vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1.1vw;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    text-shadow: 8px 8px 10px #0000008c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to left , #3d012c, #002939, #240037, #00382f, #0c003e);
+}
+
+
+.headline {
+    
+    margin: 0;
+    position: absolute;
+
+    
+    margin-top: 50vh;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    
+
+    font-family: 'Turret Road', cursive;
+    color:#cc68dc;
+    font-size: 5vw;
+    filter: contrast(15);
+
+}
+
+
+#text {
+    text-align: center;
+    animation: 3s ease-in 1s 2 reverse both paused slidein;
+  }
+
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+  #text:after {
+    content: "";
+    width: 0.125ch;
+    height: 1.2ch;
+    background: #cc68dc;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+
+  .content {
+    position: absolute;
+    margin-top: 500vh;
+    color: aqua;
+}
+
+#scroll_down_indicator img {
+    opacity: 1;
+    position: fixed;
+    width: 13vh;
+    height: auto;
+    bottom: 0vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fade 4s linear infinite;
+
+
+
+}
+
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+
+  /* CSS */
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #be26d6;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#9601ad 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #001496;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 3ch;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 2.95vw;
+  }
+  
+  .button-30:focus {
+    box-shadow: #9601ad 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #9601ad 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #9601ad 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #9601ad 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
